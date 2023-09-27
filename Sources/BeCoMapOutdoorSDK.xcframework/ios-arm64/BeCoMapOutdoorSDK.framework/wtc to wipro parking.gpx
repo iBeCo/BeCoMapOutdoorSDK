@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Open GPX Tracker for iOS">
+	<wpt lat="10.007893763498565" lon="76.36386937117159">
+		<time>2023-02-01T11:01:55Z</time>
+		<name>4:31:55 PM</name>
+		<desc>01-Feb-2023 at 4:31:55 PM</desc>
+	</wpt>
+	<wpt lat="10.007965950430112" lon="76.3641734748374">
+		<time>2023-02-01T11:02:13Z</time>
+		<name>4:32:13 PM</name>
+		<desc>01-Feb-2023 at 4:32:13 PM</desc>
+	</wpt>
+	<wpt lat="10.008036157624685" lon="76.36443820188667">
+		<time>2023-02-01T11:02:24Z</time>
+		<name>4:32:24 PM</name>
+		<desc>01-Feb-2023 at 4:32:24 PM</desc>
+	</wpt>
+	<wpt lat="10.008097807291717" lon="76.36455999175219">
+		<time>2023-02-01T11:02:33Z</time>
+		<name>4:32:33 PM</name>
+		<desc>01-Feb-2023 at 4:32:33 PM</desc>
+	</wpt>
+	<wpt lat="10.008368717491418" lon="76.36448764164469">
+		<time>2023-02-01T11:02:44Z</time>
+		<name>4:32:44 PM</name>
+		<desc>01-Feb-2023 at 4:32:44 PM</desc>
+	</wpt>
+	<wpt lat="10.008550579666109" lon="76.3643675213368">
+		<time>2023-02-01T11:02:53Z</time>
+		<name>4:32:53 PM</name>
+		<desc>01-Feb-2023 at 4:32:53 PM</desc>
+	</wpt>
+	<wpt lat="10.00878607533693" lon="76.3642859980573">
+		<time>2023-02-01T11:03:02Z</time>
+		<name>4:33:02 PM</name>
+		<desc>01-Feb-2023 at 4:33:02 PM</desc>
+	</wpt>
+	<wpt lat="10.009071881217091" lon="76.36423491013555">
+		<time>2023-02-01T11:03:11Z</time>
+		<name>4:33:11 PM</name>
+		<desc>01-Feb-2023 at 4:33:11 PM</desc>
+	</wpt>
+	<wpt lat="10.009247432269671" lon="76.36413273429194">
+		<time>2023-02-01T11:03:18Z</time>
+		<name>4:33:18 PM</name>
+		<desc>01-Feb-2023 at 4:33:18 PM</desc>
+	</wpt>
+	<wpt lat="10.00949470218875" lon="76.36404686310412">
+		<time>2023-02-01T11:03:24Z</time>
+		<name>4:33:24 PM</name>
+		<desc>01-Feb-2023 at 4:33:24 PM</desc>
+	</wpt>
+	<wpt lat="10.009728056311994" lon="76.36396642680172">
+		<time>2023-02-01T11:03:31Z</time>
+		<name>4:33:31 PM</name>
+		<desc>01-Feb-2023 at 4:33:31 PM</desc>
+	</wpt>
+	<wpt lat="10.009949635530601" lon="76.36387838165989">
+		<time>2023-02-01T11:03:36Z</time>
+		<name>4:33:36 PM</name>
+		<desc>01-Feb-2023 at 4:33:36 PM</desc>
+	</wpt>
+	<wpt lat="10.010066312449696" lon="76.36376859697685">
+		<time>2023-02-01T11:03:41Z</time>
+		<name>4:33:41 PM</name>
+		<desc>01-Feb-2023 at 4:33:41 PM</desc>
+	</wpt>
+	<wpt lat="10.010393863943282" lon="76.3637392485962">
+		<time>2023-02-01T11:03:49Z</time>
+		<name>4:33:49 PM</name>
+		<desc>01-Feb-2023 at 4:33:49 PM</desc>
+	</wpt>
+	<wpt lat="10.0105983158518" lon="76.36364468159205">
+		<time>2023-02-01T11:03:57Z</time>
+		<name>4:33:57 PM</name>
+		<desc>01-Feb-2023 at 4:33:57 PM</desc>
+	</wpt>
+	<wpt lat="10.010888401846596" lon="76.36355772342722">
+		<time>2023-02-01T11:04:01Z</time>
+		<name>4:34:01 PM</name>
+		<desc>01-Feb-2023 at 4:34:01 PM</desc>
+	</wpt>
+    <wpt lat="10.0113668123" lon="76.3632070962">
+        <time>2023-02-01T11:04:10Z</time>
+        <name>4:36:10 PM</name>
+        <desc>01-Feb-2023 at 4:36:10 PM</desc>
+    </wpt>
+	<wpt lat="10.011055388500898" lon="76.36353707086312">
+		<time>2023-02-01T11:04:05Z</time>
+		<name>4:34:05 PM</name>
+		<desc>01-Feb-2023 at 4:34:05 PM</desc>
+	</wpt>
+    <wpt lat="10.011191332700932" lon="76.36326423962107">
+        <time>2023-02-01T11:04:05Z</time>
+        <name>4:35:05 PM</name>
+        <desc>01-Feb-2023 at 4:35:05 PM</desc>
+    </wpt>
+	<wpt lat="10.011156" lon="76.362983">
+		<time>2023-02-01T11:05:10Z</time>
+		<name>4:36:10 PM</name>
+		<desc>01-Feb-2023 at 4:37:10 PM</desc>
+	</wpt>
+	<trk>
+	</trk>
+</gpx>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Open GPX Tracker for iOS">
+	<wpt lat="10.007954434311003" lon="76.3639114761635">
+		<time>2023-02-02T10:13:43Z</time>
+		<name>3:43:43 PM</name>
+		<desc>02-Feb-2023 at 3:43:43 PM</desc>
+	</wpt>
+	<wpt lat="10.007968396388579" lon="76.36393940117355">
+		<time>2023-02-02T10:14:00Z</time>
+		<name>3:44:00 PM</name>
+		<desc>02-Feb-2023 at 3:44:00 PM</desc>
+	</wpt>
+	<wpt lat="10.007926134059316" lon="76.36390386190449">
+		<time>2023-02-02T10:14:06Z</time>
+		<name>3:44:06 PM</name>
+		<desc>02-Feb-2023 at 3:44:06 PM</desc>
+	</wpt>
+	<trk>
+	</trk>
+</gpx>

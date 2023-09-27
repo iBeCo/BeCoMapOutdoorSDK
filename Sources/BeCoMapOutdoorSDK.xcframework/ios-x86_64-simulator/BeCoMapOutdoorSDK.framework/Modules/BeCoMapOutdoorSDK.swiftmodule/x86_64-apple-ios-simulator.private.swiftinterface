@@ -1,0 +1,155 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BeCoMapOutdoorSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+@_exported import BeCoMapOutdoorSDK
+import CoreLocation
+import DeveloperToolsSupport
+import Foundation
+import GameplayKit
+import GoogleMaps
+import GoogleMapsUtils
+import Swift
+import SwiftProtobuf
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import simd
+@objc public enum BEAuthorizationStatus : Swift.Int {
+  case BEUnknown
+  case BEUnauthorized
+  case BEAuthorized
+  case BEAuthorizing
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class BESession : ObjectiveC.NSObject {
+  @objc public var autherisationStatus: BeCoMapOutdoorSDK.BEAuthorizationStatus
+  @objc public var usageToken: Swift.String
+  @objc deinit
+}
+public typealias BEPoints = [BeCoMapOutdoorSDK.BEPoint]
+@objc public enum BECustomPointType : Swift.Int {
+  case currentLocation = 0
+  case parking = 1
+  case routeStarting = 2
+  case routeEnding = 3
+  case other = 4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class BEPoint : ObjectiveC.NSObject {
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc public var pointDescription: Swift.String {
+    @objc get
+  }
+  @objc final public let category: BeCoMapOutdoorSDK.BECategory
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BeCoServices : ObjectiveC.NSObject {
+  @objc public class func sharedInstance() -> BeCoMapOutdoorSDK.BeCoServices
+  @objc public func configureWith(usageToken: Swift.String)
+  @objc public func provideAPIKey(_ APIKey: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class BECategory : ObjectiveC.NSObject {
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  @objc final public let arabicName: Swift.String
+  @objc final public let englishName: Swift.String
+  @objc final public let color: Swift.String
+  @objc final public let imageName: Swift.String
+  @objc final public let textColourSelected: Swift.String
+  @objc deinit
+}
+extension CoreLocation.CLLocationCoordinate2D : Swift.Equatable {
+  public static func == (lhs: CoreLocation.CLLocationCoordinate2D, rhs: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
+}
+postfix operator ~
+public enum BEError : Swift.Error {
+  case BERequestFailed
+  case BEInvalidToken
+  case BEFailedToFetchSites
+  case BELocationPermissionError
+  case BEBeaconDataError
+  case BENodeError
+  case BERoutingRequestError
+  case BERoutingErrorNoValidPath
+  public static func == (a: BeCoMapOutdoorSDK.BEError, b: BeCoMapOutdoorSDK.BEError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension BeCoMapOutdoorSDK.BEError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@objc public protocol BEMapViewDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func becoView(_ mapView: BeCoMapOutdoorSDK.BEMapView, didLoadWith site: BeCoMapOutdoorSDK.BESite)
+  @objc func becoMapView(_ mapView: BeCoMapOutdoorSDK.BEMapView, didFailedWith error: any Swift.Error)
+  @objc optional func becoMapView(_ mapView: BeCoMapOutdoorSDK.BEMapView, userDidReached point: BeCoMapOutdoorSDK.BEPoint)
+  @objc optional func becoMapView(_ mapView: BeCoMapOutdoorSDK.BEMapView, didBeaconDetect uuid: Swift.String, major: Swift.Int32, minor: Swift.Int32)
+}
+@objc public enum BELanguage : Swift.Int {
+  case english = 0
+  case arabic = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class BEMapView : BeCoMapOutdoorSDK.BEView {
+  @objc @_Concurrency.MainActor(unsafe) weak public var mapDelegate: (any BeCoMapOutdoorSDK.BEMapViewDelegate)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc convenience dynamic public init()
+  @objc @_Concurrency.MainActor(unsafe) public func loadSite(_ siteIdentifier: Swift.String, name: Swift.String, language: BeCoMapOutdoorSDK.BELanguage = .english)
+  @objc @_Concurrency.MainActor(unsafe) public func selectPointWithName(_ name: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func drawRouteWithName(_ pointNames: [Swift.String], startForUserlocation: Swift.Bool = true)
+  @objc @_Concurrency.MainActor(unsafe) public func drawRouteToLocation(_ location: CoreLocation.CLLocationCoordinate2D, with name: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func resetMap()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class BEView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc convenience dynamic public init()
+  @objc deinit
+}
+public typealias BESites = [BeCoMapOutdoorSDK.BESite]
+@_hasMissingDesignatedInitializers @objc public class BESite : ObjectiveC.NSObject {
+  @objc final public let name: Swift.String, identifier: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class BELocation : ObjectiveC.NSObject, Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+extension BeCoMapOutdoorSDK.BEAuthorizationStatus : Swift.Equatable {}
+extension BeCoMapOutdoorSDK.BEAuthorizationStatus : Swift.Hashable {}
+extension BeCoMapOutdoorSDK.BEAuthorizationStatus : Swift.RawRepresentable {}
+extension BeCoMapOutdoorSDK.BECustomPointType : Swift.Equatable {}
+extension BeCoMapOutdoorSDK.BECustomPointType : Swift.Hashable {}
+extension BeCoMapOutdoorSDK.BECustomPointType : Swift.RawRepresentable {}
+extension BeCoMapOutdoorSDK.BEError : Swift.Equatable {}
+extension BeCoMapOutdoorSDK.BEError : Swift.Hashable {}
+extension BeCoMapOutdoorSDK.BELanguage : Swift.Equatable {}
+extension BeCoMapOutdoorSDK.BELanguage : Swift.Hashable {}
+extension BeCoMapOutdoorSDK.BELanguage : Swift.RawRepresentable {}

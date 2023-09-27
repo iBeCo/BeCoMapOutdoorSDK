@@ -1,0 +1,11 @@
+framework module BeCoMapOutdoorSDK {
+  umbrella header "BeCoMapOutdoorSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module BeCoMapOutdoorSDK.Swift {
+  header "BeCoMapOutdoorSDK-Swift.h"
+  requires objc
+}

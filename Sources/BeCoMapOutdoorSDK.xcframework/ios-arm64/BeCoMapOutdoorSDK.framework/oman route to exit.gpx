@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Open GPX Tracker for iOS">
+    <wpt lat="23.57011" lon="58.40373">
+        <time>2023-02-02T10:14:00Z</time>
+        <name>3:44:00 PM</name>
+        <desc>02-Feb-2023 at 3:44:00 PM</desc>
+    </wpt>
+	<wpt lat="23.570205" lon="58.403766">
+		<time>2023-02-02T10:14:00Z</time>
+		<name>3:44:00 PM</name>
+		<desc>02-Feb-2023 at 3:44:00 PM</desc>
+	</wpt>
+    <wpt lat="23.570307" lon="58.403592">
+        <time>2023-02-02T10:14:00Z</time>
+        <name>3:44:00 PM</name>
+        <desc>02-Feb-2023 at 3:44:00 PM</desc>
+    </wpt>
+    <wpt lat="23.570355" lon="58.403505">
+        <time>2023-02-02T10:14:00Z</time>
+        <name>3:44:00 PM</name>
+        <desc>02-Feb-2023 at 3:44:00 PM</desc>
+    </wpt>
+    <wpt lat="23.570355" lon="58.403505">
+        <time>2023-02-02T10:14:00Z</time>
+        <name>3:44:00 PM</name>
+        <desc>02-Feb-2023 at 3:44:00 PM</desc>
+    </wpt>
+    <wpt lat="23.569646" lon="58.402845">
+        <time>2023-02-02T10:14:00Z</time>
+        <name>3:44:00 PM</name>
+        <desc>02-Feb-2023 at 3:44:00 PM</desc>
+    </wpt>
+	<trk>
+	</trk>
+</gpx>
