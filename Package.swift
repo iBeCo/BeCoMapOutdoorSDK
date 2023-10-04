@@ -13,9 +13,6 @@ let package = Package(
             name: "BeCoMapOutdoorSDK",
             targets: ["BeCoMapOutdoorSDK"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.23.0"),
-    ],
     targets: [
         .binaryTarget(name: "BeCoMapOutdoorSDK", path: "./Sources/BeCoMapOutdoorSDK.xcframework"),
     ]
